@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admkhalid</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="text-frame">
+                <div id="source">
+                    <h1 style="color: #33ff33;">&gt;<span id="text"></span><span id="blinker">_</span>
+                    </h1>
+                </div>
+                <h2>CS Graduate <br />
+                    Amateur Programmer<br />
+                    Casual Gamer<br />
+                    Professional Weirdo</h2>
+            </div>
+            <div class="img-frame">
+                <img id="propic" src="./img/propic.jpg" alt="">
+            </div>
+        </div>
+        <div class="links">
+            <a href="mailto:admkhalid@zoho.com">email</a>
+            <a href="https://github.com/admkhalid">github</a>
+            <a href="https://www.linkedin.com/in/kalid-ahamed-11a327128/">linkedin</a>
+            <a href="./kalid's Resume.pdf">resume</a>
+        </div>
+        <div class="bio">
+            <div class="tabs">
+                <button class="tablink" id="abouttab" onclick="openTab(event, 'about')">About Me</button>
+                <button class="tablink" id="doingtab" onclick="openTab(event, 'doing')">Stuff I Did/am Doing</button>
+            </div>
+            <div id="about" class="tabcontent">
+                <p>Hello! I'm Kalid Ahamed (pronounced Khaalidh) and I'm a CS Graduate from Tagore Engineering College
+                    (affiliated to Anna University), and an amateur programmer. I love Computers, playing story
+                    driven games and watching well made movies and TV shows. I can develop websites (front end and
+                    backend), can teach computers to do some basic things like predicting cost (Machine Learning with
+                    Linear Regression) and right now I'm trying to become an expert in Deep Learning, hoping to publish
+                    papers that could help humanity in a significant way.</p>
+            </div>
+            <div id="doing" class="tabcontent">
+                <ul>
+                    <li>Completely revamped my college's website (which got revamped again by another team). Here's the
+                        <a href="https://tagore-engg.ac.in/oldtec-website-data/credits/">proof</a>.</li>
+                    <li>Got awarded "Pride of Tagore" (for developing the website) and "The Most Active Member of the
+                        Club (Code-X)" on my college's annual day.</li>
+                    <li>Developed a website which provides an online platform for farmers as the final project for my
+                        course (kinda like an online Uzhavar Sandhai/Farmer's Market) - <a
+                            href="https://github.com/admkhalid/osiris_server">Repo for server side code.</a></li>
+                    <li>(Mini Project) Developed a micorblogging website with Django. <a
+                            href="https://github.com/admkhalid/kConnect">Repo Link.</a></li>
+                    <li>(Under Development) Developing a bot which can play Grand Theft Auto 5.
+                        (Originally created by sentdex). <a href="https://github.com/admkhalid/pygta5">Repo Link.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/typing.js">
+    </script>
+    <script>
+        function openTab(evt, tabname) {
+            let i, tabcontent = document.getElementsByClassName("tabcontent"), tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabname).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        var typing = new Typing("~2000~Kalid Ahamed");
+        typing();
+    </script>
+</body>
+
+</html>
